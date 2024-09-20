@@ -1,0 +1,13 @@
+curl -i 'http://ip:7557/devices/202351-XC220%2DG3-22435J1007380/tasks?connection_request' -X POST --data '{"name": "setParameterValues","parameterValues": [["Device.IP.Diagnostics.Downs.DiagnosticsState", "Requested", "xsd:string"],["Device.IP.Diagnostics.DownloadDiagnostics.DownloadURL", "http://www.ovh.net/files/100Mb.dat", "xsd:string"]]}'
+HTTP/1.1 404 Not Found
+GenieACS-Version: 1.2.9+20220822165235
+Date: Fri, 28 Jun 2024 10:03:46 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+Transfer-Encoding: chunked
+
+No such device
+
+curl -G \
+  --data-urlencode 'query={"_id":"202351-XC220%2DG3-22435J1007380"}' \
+  http://ip:7557/devices/
